@@ -28,7 +28,7 @@
         height: 'Height'
         alt: 'Alt Text'
         padding: 'Padding'
-        'float': 'Float'
+        txt_float: 'Float'
         float_left: 'left'
         float_right: 'right'
         float_none: 'No'
@@ -42,10 +42,24 @@
         height: 'Höhe'
         alt: 'Alt Text'
         padding: 'Padding'
-        'float': 'Float'
+        txt_float: 'Float'
         float_left: 'Links'
         float_right: 'Rechts'
         float_none: 'Nein'
+      fr:
+        title_insert: 'Inserer une image'
+        title_properties: 'Propriétés de l\'image'
+        insert: 'Inserer'
+        chage_image: 'Changer d\'image:'
+        source: 'URL'
+        width: 'Largeur'
+        height: 'Hauteur'
+        alt: 'Texte alternatif'
+        padding: 'Encadrement'
+        txt_float: 'Flotaison'
+        float_left: 'gauche'
+        float_right: 'droite'
+        float_none: 'non'
 
     texts: null
 
@@ -243,7 +257,7 @@
           @_property_cb_html( 'unfloat',
             @$image.css('float') == 'none',
             { label: @texts.float_none, row: false } ),
-        @texts[float])
+        @texts.txt_float)
         $img_properties.html html
         $img_properties.show()
       else

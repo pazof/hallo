@@ -27,20 +27,14 @@
       # json object
       # the object has fields offset (the requested offset), total (total
       # number of results) and assets (list of url and alt text for each image)
+      # tags: tag information - TODO: do not expect that here but get it from
+      # context
       search: null
       searchUrl: null
       # this function is responsible to fetch suggestions for images to insert
       # this could for example be based on tags of the entity or some semantic
       # enhancement, ...
       #
-      # tags: tag information - TODO: do not expect that here but get it from
-      # context
-      # limit: how many results to show at max
-      # offset: offset for the returned result
-      # successCallback: function that will be called with the response json
-      # object
-      # the object has fields offset (the requested offset), total (total
-      # number of results) and assets (list of url and alt text for each image)
       suggestions: null
       loaded: null
       upload: null
